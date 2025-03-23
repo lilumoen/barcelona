@@ -6,12 +6,21 @@ body {
   max-width: 1300px;
   margin: 0 auto;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+}
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 :root {
   ---primary-color: rgb(255, 255, 255);
 }
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
-    url("/images/barcelona-on-the-road.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
+    url("/images/header-3.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -38,7 +47,7 @@ header h3 {
 }
 header a {
   text-align: center;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 13px;
   line-height: 1.5;
   letter-spacing: 3px;
@@ -57,15 +66,70 @@ header h2 {
   margin: 0;
 }
 
-footer {
+.socials-icon {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2px;
   color: rgb(57, 24, 35);
-  text-align: center;
+}
+.icon-links {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  border-radius: 20%;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  padding: 10px 12px;
+  margin: 3px;
+  justify-content: space-between;
+}
+.icon-links:hover {
+  color: rgb(233, 171, 238);
+
+  transition: all 200ms ease-in-out;
+}
+footer {
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(rgba(150, 80, 80, 0.4), rgba(0, 0, 0, 0.9)),
+    url(/images/night-life.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
 }
 footer a {
-  color: rgb(57, 24, 35);
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+}
+footer a:hover {
+  color: rgb(233, 171, 238);
+}
+footer h4 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
 }
 
-@media (max-width: 900px) {
+footer p {
+  font-weight: 300;
+  opacity: 0.7;
+  font-size: 13px;
+  line-height: 1.2;
+  margin-right: 50px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
