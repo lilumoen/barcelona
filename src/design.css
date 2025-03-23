@@ -191,7 +191,10 @@ footer li {
     gap: 1px;
     text-align: center;
   }
-
+  .grid-3-columns {
+    gap: 1px;
+    margin: 0;
+  }
   .why-barcelona {
     margin-top: 10px;
   }
@@ -229,6 +232,6 @@ footer li {
     margin-top: 35px;
   }
   footer {
-    padding: 1px 0;
+    padding: 0 40px;
   }
 }
