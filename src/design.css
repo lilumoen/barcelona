@@ -1,5 +1,6 @@
 body {
-  background: rgba(0, 0, 0, 0.947);
+  background: rgba(227, 222, 222, 0.947);
+  font-family: "poppins";
 }
 :root {
   ---primary-color: white;
