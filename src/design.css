@@ -1,3 +1,7 @@
 h1 {
   font-family: "poppins";
-  
+  font-weight: 300;
+  font-style: normal;
+  font-size: 60px;
+  line-height: 100px;
+}
