@@ -1,7 +1,21 @@
+body {
+  background: rgba(0, 0, 0, 0.947);
+}
+:root {
+  ---primary-color: white;
+}
 h1 {
   font-family: "poppins";
+  color: var(---primary-color);
   font-weight: 300;
   font-style: normal;
   font-size: 60px;
   line-height: 100px;
+}
+
+footer {
+  color: var(---primary-color);
+}
+footer a {
+  color: rgb(182, 150, 160);
 }
