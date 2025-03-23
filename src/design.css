@@ -9,10 +9,12 @@ body {
 
 .grid {
   display: grid;
+
   grid-template-columns: 1fr 1fr 2fr;
+  gap: 64px;
 }
 section {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 :root {
@@ -100,6 +102,7 @@ footer {
 }
 footer a {
   color: rgb(255, 255, 255);
+  font-size: 14px;
   opacity: 0.6;
 }
 footer a:hover {
@@ -116,7 +119,6 @@ footer p {
   opacity: 0.7;
   font-size: 13px;
   line-height: 1.2;
-  margin-right: 50px;
 }
 
 footer ul {
