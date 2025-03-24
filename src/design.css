@@ -253,6 +253,9 @@ footer li {
     font-size: 10px;
     margin-bottom: 20px;
   }
+  .spotify-song {
+    height: 80px;
+  }
   .grid {
     grid-template-columns: 1fr;
     gap: 1px;
