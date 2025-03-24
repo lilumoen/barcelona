@@ -15,16 +15,63 @@ body {
   gap: 60px;
 }
 .grid-3-columns {
-  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 64px;
+  padding-bottom: 30px;
+  padding-top: 50px;
+}
+.grid-3-columns-secondary {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 64px;
+  padding-bottom: 30px;
+  padding-top: 50px;
+}
+.card {
+  background: white;
+  margin: 30px 0;
+}
+
+.card-body {
+  padding: 25px 32px 0;
+  margin: 0;
+}
+.card-footer {
+  padding-bottom: 20px;
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background: rgba(131, 71, 71, 0.924);
+  max-width: 70%;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.img-responsive {
+  max-width: 100%;
+  display: block;
 }
 .why-barcelona {
-  margin-top: 60px;
+  margin-top: 10px;
 }
 section {
-  max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
+}
+section.secondary {
+  background: rgb(246, 246, 246);
+}
+.text-center {
+  text-align: center;
 }
 :root {
   ---primary-color: rgb(255, 255, 255);
@@ -95,6 +142,18 @@ main h3 {
   font-weight: 800;
   font-size: 32px;
   line-height: 1.5;
+}
+main h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  margin: 0;
+}
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  color: rgba(150, 80, 80, 0.4);
 }
 main p {
   font-weight: 200;
@@ -185,7 +244,6 @@ footer li {
     font-size: 10px;
     margin-bottom: 20px;
   }
-
   .grid {
     grid-template-columns: 1fr;
     gap: 1px;
@@ -194,10 +252,13 @@ footer li {
   .grid-3-columns {
     gap: 1px;
     margin: 0;
+    padding: 2px;
+    padding-top: 10px;
   }
   .why-barcelona {
     margin-top: 10px;
   }
+
   main h2 {
     font-size: 10px;
     margin-top: 0;
@@ -213,19 +274,36 @@ footer li {
   section {
     padding: 40px 0;
   }
+  .grid-3-columns a {
+    font-size: 10px;
+    padding-top: 0;
+    line-height: 1;
+  }
+  .grid-3-columns-secondary a {
+    padding: 10px;
+    max-width: 25%;
+    font-size: 7px;
+  }
 
   section h4 {
     font-size: 10px;
+    margin-bottom: 10px;
   }
   section h2 {
     font-size: 14px;
   }
   section p {
     font-size: 10px;
+    margin-top: 0;
   }
   .socials-icon {
     margin-top: 0;
   }
+  ul {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
   header a {
     font-size: 7px;
     padding: 12px 18px;
